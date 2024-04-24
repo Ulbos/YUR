@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Юридическая Компания</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="wrapper-container">
+                <img src="img/LOGO.svg" alt="" class="logo-logo">
+                <div class="btn-group">
+                    <button type="button" class="btn  btn-size" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#fff" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                          </svg>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item " href="#">Наши услуги</a></li>
+                        <li><a class="dropdown-item" href="#">Команда Юристов</a></li>
+                        <li><a class="dropdown-item" href="#">Отзывы</a></li>
+                       
+                        <li><a class="dropdown-item" href="#">Контакты</a></li>
+                      </ul>
+                </div>
+                <div class="addres-div ">
+                    <a href="#" class="adaptive-link link-nav">
+                        <div class="color-bg-btn">
+                             <svg width="14" height="17" class="svg-icons"  viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.99689 0C3.13947 0 1.65411e-06 2.79775 0 6.23394C-2.41754e-06 12.2801 6.603 16.8766 6.603 16.8766C6.83496 17.0411 7.16379 17.0411 7.39576 16.8766C7.39576 16.8766 14 12.2801 14 6.23394C14 2.79775 10.8543 0 6.99689 0ZM6.99689 3.40144C8.74616 3.40144 10.1816 4.6757 10.1816 6.23394C10.1816 7.7922 8.74617 9.06976 6.99689 9.06976C5.24762 9.06976 3.81715 7.7922 3.81716 6.23394C3.81717 4.6757 5.24763 3.40144 6.99689 3.40144Z" fill="white"/>
+                            </svg>
+                        </div>
+                       
+                        <span> Адрес деятельности</span>
+                    </a>
+                </div>
+                <div class="call-div  ">
+                    <a href="#" class=" adaptive-link link-nav">
+                    <div class="color-bg-btn" >
+                         <svg width="17" height="17" viewBox="0 0 17 17" fill="none"  xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.5 16.5L16 14L11.1384 10.2226L10.7414 10.6388L12.5 16.5ZM15.6838 12L15.0593 11.9801L15.6838 10.7692L14.0184 9.81479L15.6838 12ZM15.3799 13.8769L14.1415 15.1748L15.0635 16.1523L16.3019 14.8543L15.3799 13.8769ZM13.387 15.5928C12.123 15.7169 8.85301 15.6063 5.31254 11.8954L4.39056 12.8728C8.25413 16.9223 11.9314 17.1201 13.5083 16.9651L13.387 15.5928ZM5.31254 11.8954C1.93773 8.35815 6.83105 5.42217 6.76146 4.13149L0.0036166 4.17058C0.0911908 5.79505 0.783407 9.09207 4.39056 12.8728L5.31254 11.8954ZM6.51145 6.21629L6.76146 5.95423L5.83951 4.97682L5.58949 5.23887L6.51145 6.21629ZM6.96047 2.61383L5.86126 1.06603L4.8145 1.89207L5.9137 3.43987L6.96047 2.61383ZM2.16423 0.729142L0.79596 2.16326L2.16423 3.02685L6.43709 4.13336L2.16423 0.729142ZM6.05047 5.72758C5.58949 5.23887 5.58824 5.24019 5.58824 5.24019L5.58697 5.24153L5.58437 5.2443C5.5826 5.2462 5.58077 5.24818 5.57888 5.25024C5.57511 5.25436 5.57112 5.25883 5.56692 5.26365C5.5585 5.27327 5.54927 5.28427 5.53939 5.29671C5.51962 5.32156 5.49723 5.35217 5.47369 5.38879C5.42651 5.4622 5.37509 5.55927 5.33146 5.68133C5.24243 5.9304 2.56538 7.88716 2.62522 8.29372C2.74224 9.08883 3.98184 10.9894 5.31254 12.3841L8.14368 8.92796C6.89841 7.62274 6.60176 6.82844 6.54666 6.45399C6.52042 6.27579 6.54762 6.18808 6.55512 6.16731C6.55965 6.15447 6.56183 6.15315 6.55625 6.16193C6.55346 6.16622 6.54884 6.17293 6.54161 6.18199C6.53803 6.18652 6.53376 6.19164 6.52879 6.19736C6.52627 6.20022 6.52365 6.20322 6.52069 6.20637C6.51929 6.20795 6.51781 6.20956 6.51624 6.21122L6.51389 6.21372L6.51267 6.215C6.51267 6.215 6.51145 6.21629 6.05047 5.72758ZM5.31254 12.3841C6.64367 13.7793 12.1906 18.4813 12.5 14.8543C12.8861 14.9167 11.0068 11.9783 11.2429 11.8856C11.3587 11.8401 11.1732 14.0493 11.2429 14C11.2778 13.9754 11.5847 11.6893 11.6083 11.6686C12.4044 14.3656 14.6025 11.6162 11.6398 11.6398C10 11.6162 9.99608 12.004 10 12C10.002 11.998 11.6564 11.6234 11.6582 11.6215L11.6609 11.6188L11.6622 11.6175C11.6622 11.6175 11.6634 11.6162 11.2024 11.1274C10.7414 10.6388 10.7427 10.6375 10.7427 10.6375L10.7439 10.6362L10.7462 10.6337C10.7479 10.6322 10.7494 10.6306 10.7509 10.629C10.7539 10.626 10.7568 10.6232 10.7595 10.6206C10.7649 10.6154 10.7698 10.6109 10.7741 10.6073C10.7827 10.5997 10.789 10.5949 10.793 10.5921C10.8011 10.5864 10.7994 10.589 10.7865 10.594C10.7652 10.6024 10.6796 10.6311 10.5077 10.6033C10.1474 10.5451 9.3886 10.2327 8.14368 8.92796L5.31254 12.3841ZM5.86126 1.06603C4.9727 -0.185138 3.22542 -0.383115 2.16423 0.729142L6.43709 4.13336C6.90057 3.64757 4.37285 1.27021 4.8145 1.89207L5.86126 1.06603ZM6.76146 4.13149C6.74431 3.81344 3.96429 2.16326 2.16423 3.02685L0.79596 2.16326C0.327561 2.6542 -0.0406761 3.34917 0.0036166 4.17058L6.76146 4.13149ZM14.1415 15.1748C13.902 15.426 13.6452 15.5674 13.387 15.5928L13.5083 16.9651C14.1487 16.9022 14.6734 16.5612 15.0635 16.1523L14.1415 15.1748ZM6.76146 5.95423C7.61968 5.0547 7.68349 3.63187 6.96047 2.61383L5.9137 3.43987C6.26544 3.93514 6.21314 4.58521 5.83951 4.97682L6.76146 5.95423ZM15.0593 11.9801C15.7722 12.3886 15.8833 13.3493 15.3799 13.8769L16.3019 14.8543C17.4703 13.6297 17.11 11.5863 15.6838 10.7692L15.0593 11.9801ZM16 14C16.3347 13.6492 15.224 11.7366 15.6838 12L14.0184 9.81479C13.0738 9.27347 11.9015 9.42297 11.1384 10.2226L16 14Z" fill="white"/>
+                         </svg>
+                    </div>
+                          
+                           
+                          <span>8-912-345-36-46</span>
+                    </a>
+                </div>
+                <div class="zayavka">
+                    <a href="#" class=" link-nav">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" class="bi bi-clipboard-check  zaya-margin" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                            <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"/>
+                            <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"/>
+                          </svg>
+                        <span>Получить консультацию</span>
+                    </a>
+                </div>
+                <div class="whatsapp-write   ">
+                    <a href="" class="whatsapp-link link-nav ">
+                         <span>Написать в </span> 
+                        <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <rect width="26" height="25" fill="url(#pattern0_103_419)"/>
+                            <defs>
+                            <pattern id="pattern0_103_419" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_103_419" transform="matrix(0.02 0 0 0.0208 0 -0.02)"/>
+                            </pattern>
+                            <image id="image0_103_419" width="50" height="50" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADEklEQVR4nO2aTWxMURTHhyolVR8xdCGIjwWxkVhYS2l8hYhQbOzER1ssbSRdKRYaiRKJhQUNsVBFLBAWImJjY6Y6kfqKSBuJWBSlPzlxJZNx33v3vvd6303TXzLJJPPuf+5/3r3nnnPe5HLjjFGAWcA24DRwBygCX4Af6iXvC+ozuWYrMDPnA8AUYC9wH/iFPTLmHrBHtHIZGJgKHAM+kh4fgCNAjSsTG4ASo0cf0Djay6gDd1yRO5+2iXnAC9zzHJiblolF6nZnxWuZQ1ITeRVGs6YE1Mc1UZPRcgpbZvYhGujEP87FCbG+st4mzPbiL31Gh6Y6sU34CbQA04CJwDrgN25oNbkbpmnHfs34btzwPnTjqwTQhMcB4xtxx+4wI5LFmrArYPwEh/vrblg9YZqKLw35MVpxwzBQp5uAFEWmBK5PKZZUIHDBFt0EzlgI5EOMLAFGcMMp3QR6LAQ2BZioBh7ijtu6SUiWacp1T9Kaom4SgxYCsgcWaDQe4ZYBnRHpdNjQpdFYDgzhju86I3EmsF2jc5CMjXyKISS9qoUarY4sl9armGIvgemaEz4qnPcn6If9o5A0/FYi3cOqgNztm+Z6CSyLy86dzphLu1tnpI1kXJZ0XqM7H7haluJLarFWc109cBL4avGd7UlTlLBeVPV/4n/1l8lJDOzQfV5xnSmbdQIzJAqQnAfA7LDJRhiZY3GW1QWJpFUY9euWj6GRjYbf0ZNGYWWCJI6XZI9YGrllqN8UJiJJ31vSRZbreWC1QZl9wVDzHTA56hc5xOghZ9VxYJVqWtSqluwB4I2FTrPJrRVhnykadRyBffjLCNAQaUIZuYa/nDU1UWVZl7jkWeQGLzOyBj8pycMmIxPKyAn8o1dXKkQZeYp/yylva8KmQeeCi3Ef7OzEn3OiwdpAmRGpJ6IYAG6qxwlHVXKYFpJ2NCf+B4Rq1VfyGbgBHAZWSglbMWaSdMVV1hynwhtWlWmTcWiNAniiGhBdKvdZUTnxiPG1qjhrUxlsQekNqVbToMq1xHS7FEWVtf44uTHEH/WIjfLzyv3dAAAAAElFTkSuQmCC"/>
+                            </defs>
+                            </svg>
+                        
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="row ">
+            <nav class="nav-menu-header" >
+                <ul class="nav">
+                    <li class="nav__item">
+                        <a  class="nav__link-header" href="#">Права потребителей</a>
+                    </li>
+                    <li class="nav__item">
+                        <a  class="nav__link-header" href="#">Права потребителей</a>
+                    </li>
+                    <li class="nav__item">
+                        <a  class="nav__link-header" href="#">Права потребителей</a>
+                    </li>
+                    <li class="nav__item">
+                        <a  class="nav__link-header" href="#">Права потребителей</a>
+                    </li>
+                    <li class="nav__item">
+                        <a  class="nav__link-header" href="#">Права потребителей</a>
+                    </li>
+                    <li class="nav__item">
+                        <a  class="nav__link-header" href="#">Права потребителей</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+    <section class="hero-section">
+        <div class="position-wrapper">
+            <div class="container">
+                <div class="row   hero-container"   >
+                    <div class="col-lg-8   col-content ">
+                        <div class="block-hero">
+                            <h1>Лучшее решение<br>
+                                принимаются здесь</h1>
+                            
+                             <div class="chek-text ">
+                                <div class="chek-text__item">
+                                 
+                                    <svg width="50" height="68" viewBox="0 0 71 68" class="hero-svg-done" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M33.2812 4.25C16.1536 4.25 2.21875 17.5961 2.21875 34C2.21875 50.4039 16.1536 63.75 33.2812 63.75H36.6094C53.737 63.75 67.6719 50.4039 67.6719 34C67.6719 28.2635 65.9644 22.9037 63.0155 18.3551L68.8246 12.7915L65.6871 9.78662L60.3764 14.8729C54.6738 8.38331 46.1378 4.25 36.6094 4.25H33.2812ZM36.6094 8.5C44.9146 8.5 52.3416 12.1624 57.2281 17.8882L37.0254 37.2373L24.0336 24.7944L20.8961 27.7993L37.0254 43.2471L59.7762 21.4575C61.9728 25.1641 63.2344 29.442 63.2344 34C63.2344 48.0611 51.2897 59.5 36.6094 59.5C21.929 59.5 9.98438 48.0611 9.98438 34C9.98438 19.9389 21.929 8.5 36.6094 8.5Z" fill="white"/>
+                                        </svg>
+                                        <div class="text-chek">
+                                            <p>Первое преимущество</p>
+                                          <p>Первое преимущество</p>
+                                           <p>Первое преимущество</p> 
+
+                                        </div>
+                                      
+                                </div>
+                                <div class="chek-text__item">
+                                    <svg width="50" height="68" viewBox="0 0 71 68" class="hero-svg-done" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M33.2812 4.25C16.1536 4.25 2.21875 17.5961 2.21875 34C2.21875 50.4039 16.1536 63.75 33.2812 63.75H36.6094C53.737 63.75 67.6719 50.4039 67.6719 34C67.6719 28.2635 65.9644 22.9037 63.0155 18.3551L68.8246 12.7915L65.6871 9.78662L60.3764 14.8729C54.6738 8.38331 46.1378 4.25 36.6094 4.25H33.2812ZM36.6094 8.5C44.9146 8.5 52.3416 12.1624 57.2281 17.8882L37.0254 37.2373L24.0336 24.7944L20.8961 27.7993L37.0254 43.2471L59.7762 21.4575C61.9728 25.1641 63.2344 29.442 63.2344 34C63.2344 48.0611 51.2897 59.5 36.6094 59.5C21.929 59.5 9.98438 48.0611 9.98438 34C9.98438 19.9389 21.929 8.5 36.6094 8.5Z" fill="white"/>
+                                        </svg>
+                                        <div class="text-chek">
+                                            <p>Первое преимущество</p>
+                                          <p>Первое преимущество</p>
+                                           <p>Первое преимущество</p> 
+
+                                        </div> 
+                                </div>
+                                <div class="chek-text__item">
+                                    <svg width="50" height="68" viewBox="0 0 71 68" class="hero-svg-done" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M33.2812 4.25C16.1536 4.25 2.21875 17.5961 2.21875 34C2.21875 50.4039 16.1536 63.75 33.2812 63.75H36.6094C53.737 63.75 67.6719 50.4039 67.6719 34C67.6719 28.2635 65.9644 22.9037 63.0155 18.3551L68.8246 12.7915L65.6871 9.78662L60.3764 14.8729C54.6738 8.38331 46.1378 4.25 36.6094 4.25H33.2812ZM36.6094 8.5C44.9146 8.5 52.3416 12.1624 57.2281 17.8882L37.0254 37.2373L24.0336 24.7944L20.8961 27.7993L37.0254 43.2471L59.7762 21.4575C61.9728 25.1641 63.2344 29.442 63.2344 34C63.2344 48.0611 51.2897 59.5 36.6094 59.5C21.929 59.5 9.98438 48.0611 9.98438 34C9.98438 19.9389 21.929 8.5 36.6094 8.5Z" fill="white"/>
+                                        </svg>
+                                        <div class="text-chek">
+                                            <p>Первое преимущество</p>
+                                          <p>Первое преимущество</p>
+                                           <p>Первое преимущество</p> 
+
+                                        </div>
+                                </div>
+                               </div>
+        
+                    </div>
+                </div>
+                    <div class=" col-lg-4 margin-hero ">
+                        <div class="block-hero-form">
+                            <form class="hero-form-form">
+                                <h3 class=" text-center h3-title-fr">Получите бесплатную консультацию</h3>
+                                <div class="mb-3 item-input">
+                                 
+                                  <input type="text" class="form-control width-input" placeholder="Имя"  id="exampleInputEmail1" aria-describedby="emailHelp">
+                                  
+                                </div>
+                                <div class="mb-3 item-input ">
+                                 
+                                    <input type="text" class="form-control width-input" placeholder="Фамилия"  id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    
+                                  </div>
+                                  <div class="mb-3 item-input ">
+                                 
+                                    <input type="number" class="form-control width-input" placeholder="Телефон"  id="exampleInputEmail1" aria-describedby="emailHelp">
+                                   
+                                  </div>
+                                <div class="mb-3 item-input">
+                                  
+                                  <input type="password" class="form-control width-input"  placeholder="Комментарии"  id="exampleInputPassword1">
+                                </div>
+                                
+                                       <button type="submit" class="btn btn-color">Получить консультацию</button>
+                                 <div class="mt-3 form-check">
+                                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                  <label class="form-check-label check-color" for="exampleCheck1">Соглашаюсь    <a href="" class="check-link-color"> с Политикой конфиденциальности</a></label>
+                                </div>
+                              </form>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="hero-img-block" style="background-image: url(img/hero-img.jpg);"> </div>
+        </div>
+    </section>
+
+     <div class="container secter-container">
+        <section class="form-secret row">
+           <div class=" col margin-hero ">
+               <div class="block-hero-secret">
+                
+                   <form class="hero-form-form">
+                       <h3 class=" text-center secret-h3">Получите бесплатную<br> консультацию</h3>
+                       <div class="mb-3 item-input">
+                        
+                         <input type="text" class="form-control width-input" placeholder="Имя"  id="exampleInputEmail1" aria-describedby="emailHelp">
+                         
+                       </div>
+                       <div class="mb-3 item-input ">
+                        
+                           <input type="text" class="form-control width-input" placeholder="Фамилия"  id="exampleInputEmail1" aria-describedby="emailHelp">
+                           
+                         </div>
+                         <div class="mb-3 item-input ">
+                        
+                           <input type="number" class="form-control width-input" placeholder="Телефон"  id="exampleInputEmail1" aria-describedby="emailHelp">
+                          
+                         </div>
+                       <div class="mb-3 item-input">
+                         
+                         <input type="password" class="form-control width-input"  placeholder="Комментарии"  id="exampleInputPassword1">
+                       </div>
+                       
+                              <button type="submit" class="btn btn-color">Получить консультацию</button>
+                        <div class="mt-3 form-check">
+                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                         <label class="form-check-label check-color" for="exampleCheck1">Соглашаюсь    <a href="" class="check-link-color"> с Политикой конфиденциальности</a></label>
+                       </div>
+                     </form>
+           </div>
+   
+   
+           </section>
+       </div> 
+
+       <div class="container">
+        <section class="education row  align-items-center">
+            <div class="col-12">
+                <h2 class="text-center border-line   education-h2">Опыт и образование</h3>      
+            </div>
+            <div class="col-12 container-card">
+                <div class="block-education">
+                    <div class="secret-card">
+                        <img src="img/education-img.jpg"  class="img-fluid  secret-img-card " alt="">
+                         <h3 class="block-education-secret-title">Название института или компании</h3>
+                    </div>
+                    <img src="img/education-img.jpg"  class="img-fluid img-education" alt="">
+                   
+                     
+                    <div class="block-education__desc">
+                        <h3 class="block-education-title">Название института или компании</h3>
+                        <p> ТЕКСТ  ТЕКСТ  ТЕКСТ . Nihil odit delectus quae, dolorem architecto impedit, laborum aliquid cum maiores quisquam molestiae maxime quis  at accus saepe dolores ad quasi, deleniti culpa eaque commodi molestiae.
+                            Accusore. Inventore iusto, vosam beatae quod cum siInventore iusto,Inventore iusto,Inventore iusto,Inventore iusto,</p>
+                        <p class="block-education__desc-years">2023-2024 г</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 container-card">
+                <div class="block-education">
+                    <div class="secret-card">
+                        <img src="img/education-img.jpg"  class="img-fluid  secret-img-card " alt="">
+                         <h3 class="block-education-secret-title">Название института или компании</h3>
+                    </div>
+                    <img src="img/education-img.jpg"  class="img-fluid img-education" alt="">
+                    <div class="block-education__desc">
+                        <h3 class="block-education-title">Название института или компании</h3>
+                        <p> ТЕКСТ  ТЕКСТ  ТЕКСТ . Nihil odit delectus quae, dolorem architecto impedit, laborum aliquid cum maiores quisquam molestiae maxime quis  at accus saepe dolores ad quasi, deleniti culpa eaque commodi molestiae.
+                            Accusore. Inventore iusto, vosam beatae quod cum siInventore iusto,Inventore iusto,Inventore iusto,Inventore iusto,</p>
+                        <p class="block-education__desc-years">2023-2024 г</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 container-card">
+                <div class="block-education">
+                    <div class="secret-card">
+                        <img src="img/education-img.jpg"  class="img-fluid  secret-img-card " alt="">
+                         <h3 class="block-education-secret-title">Название института или компании</h3>
+                    </div>
+                    <img src="img/education-img.jpg"  class="img-fluid img-education" alt="">
+                    <div class="block-education__desc">
+                        <h3 class="block-education-title">Название института или компании</h3>
+                        <p> ТЕКСТ  ТЕКСТ  ТЕКСТ . Nihil odit delectus quae, dolorem architecto impedit, laborum aliquid cum maiores quisquam molestiae maxime quis  at accus saepe dolores ad quasi, deleniti culpa eaque commodi molestiae.
+                            Accusore. Inventore iusto, vosam beatae quod cum siInventore iusto,Inventore iusto,Inventore iusto,Inventore iusto,</p>
+                        <p class="block-education__desc-years">2023-2024 г</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+        <section class="pricing row gy-3">
+            <div class="col-12">   
+                <h2 class="text-center border-line education-h2">Услуги</h2>
+            </div>
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row justify-content-between">
+                        <div class="col mb-3">
+                            <div class="card w-100" >
+                                <img src="img/vedenie-del-v-sude-532.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Оформление документов</h5>
+                                  <p class="card-text">Консультация юристов </p>
+                                  <a href="#" class="btn btn-slider-color">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="card w-100">
+                                <img src="img/vedenie-del-v-sude-532.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Оформление документов</h5>
+                                  <p class="card-text">Консультация юристов  </p>
+                                  <a href="#" class="btn btn-slider-color">Подробнее</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="card w-100">
+                                <img src="img/vedenie-del-v-sude-532.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Оформление документов</h5>
+                                  <p class="card-text">Консультация юристов </p>
+                                  <a href="#" class="btn btn-slider-color">Подробнее</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="card w-100">
+                                <img src="img/ustavnie-doki.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Оформление документов</h5>
+                                  <p class="card-text">Консультация юристов  </p>
+                                  <a href="#" class="btn btn-slider-color">Подробнее</a>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row justify-content-between">
+                        <div class="col mb-3">
+                            <div class="card w-100" >
+                                <img src="img/ustavnie-doki.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Оформление  документов</h5>
+                                  <p class="card-text">Консультация юристов </p>
+                                  <a href="#" class="btn btn-slider-color">Подробнее</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="card w-100">
+                                <img src="img/ustavnie-doki.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Оформление  документов</h5>
+                                  <p class="card-text">Консультация юристов </p>
+                                  <a href="#" class="btn btn-slider-color">Подробнее</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="card w-100">
+                                <img src="img/vedenie-del-v-sude-532.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Оформление  документов</h5>
+                                  <p class="card-text">Консультация юристов </p>
+                                  <a href="#" class="btn btn-slider-color">Подробнее</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="card w-100">
+                                <img src="img/ustavnie-doki.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Оформление документов</h5>
+                                  <p class="card-text">Консультация юристов  </p>
+                                  <a href="#" class="btn btn-slider-color">Подробнее</a>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row justify-content-between">
+                        <div class="col">
+                            <div class="card w-100" >
+                                <img src="img/ustavnie-doki.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Оформление  документов</h5>
+                                  <p class="card-text">Консультация юристов </p>
+                                  <a href="#" class="btn btn-slider-color">Подробнее</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col">
+                            <div class="card w-100">
+                                <img src="img/ustavnie-doki.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Оформление  документов</h5>
+                                  <p class="card-text">Консультация юристов </p>
+                                  <a href="#" class="btn btn-slider-color">Подробнее</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col">
+                            <div class="card w-100">
+                                <img src="img/vedenie-del-v-sude-532.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Оформление  документов</h5>
+                                  <p class="card-text">Консультация юристов </p>
+                                  <a href="#" class="btn btn-slider-color">Подробнее</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col">
+                            <div class="card w-100">
+                                <img src="img/ustavnie-doki.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Оформление  документов</h5>
+                                  <p class="card-text">Консультация юристов   </p>
+                                  <a href="#" class="btn btn-slider-color">Подробнее</a>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+
+                    
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+        </section>
+    </div>
+    <section class="forma-section">
+        <div class="container">
+            <div class="col-12 forma-section-title ">
+                <h2 class="form-input__title text-center ">Свяжитесь с нами</h2>
+                <p class="text-center ">Окажу вам экспертную консультацию, вникну в суть вашей проблемы и подготовлю оптимальный план решения поставленной задачи</p>
+            </div>
+            <div class="block-form ">
+                <div class="row g-3 form-center">
+                    <div class="col-md-4  form-center">
+                       <input type="text" class="form-control size-input-sv" placeholder="Имя" aria-label="Имя">
+                    </div>
+                    <div class="col-md-4 form-center">
+                 
+                      <input type="number" class="form-control size-input-sv" placeholder="8" aria-label="Номер">
+    
+                    </div>
+                    <div class="col-md-4 form-center">
+                        
+                        <input type="text" class="form-control size-input-sv" placeholder="Меня интересует..." aria-label="Меня интересует">
+                    </div>
+                    
+                </div>
+                <div class="btn-form-click">
+                    <button type="submit" class="btn btn-color-forma mt-3">Оставить заявку</button>
+                    <div class="mt-3 form-check">
+                       <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                       <label class="form-check-label-form" for="exampleCheck1">Соглашаюсь    <a href="" class="form-check-label-link"> с Политикой конфиденциальности</a></label>
+                   </div>
+                </div>
+
+            </div>
+
+        </div>
+            
+    </section >
+    <div class="container">
+        <section class="working-section">
+             <div class="row">
+                 <div class="col-12  how-workign-title text-center ">
+                   <h2 class="text-center border-line">Как мы работаем?</h2>
+                   <p >Внимательно ознакомьтесь с этапами работ и выберите для<br> себя самое полезное и интересное</p>
+                 </div>
+             </div>
+             
+             <div class="cont">
+                 <div class="item text1">
+                     <h3 class="h3-title-work">Вникаю в суть дела</h3>
+                       <p class="text-card-work">Провожу с клиентом подробное собеседование, на котором выясняем все детали и обстоятельства</p>
+     
+                 </div>
+                 <div class="item num number1">
+                     1
+                     <div class="vector-grid">
+                         <img src="img/Vectorsvg.svg" alt="">
+                     </div>
+                 </div>
+                 <div class="item pusto">
+                     
+                 </div>
+                 <div class="item pusto">
+                 </div>
+                 <div class="item num number2">
+                     2
+                     <div class="vector-grid">
+                         <img src="img/Vectorsvg.svg" alt="">
+                     </div>
+                 </div>
+                 <div class="item text2">
+                     <h3 class="h3-title-work">Предлагаю стратегии</h3>
+                       <p class="text-card-work">На основании полученной от клиента информации, готовлю различные варианты действий и согласовываю их с клиентом</p>
+     
+                 </div>
+                 <div class="item text1 text-3">
+                     <h3 class="h3-title-work">Начинаю работу</h3>
+                       <p class="text-card-work">После согласования с клиентом стратегии - начинаю активную работу над делом, довожу до результата</p>
+     
+                 </div>
+                 <div class="item num number3">
+                    3
+                 </div>
+                 <div class="item pusto">   
+                 </div>
+             </div>
+     
+ 
+             
+             
+         </section> 
+        
+         
+     </div>
+     <div class="container">
+        <section class="video row">
+           <div class="col-12 ">
+               <H2 class="text-center border-line ">Выступаем на ТВ</H2>
+               <div class="video-block">
+                   <a class="video-link  fancy-video-js  video-screen fancy-video" href="https://www.youtube.com/live/6QSUTjsHU6s?si=Uq3OSnElxPh6u7_b" rel="nofollow" >
+                       <img src="img/all-elements-video.jpg" class="img-fluid" alt="" loading="lazy"  alt="Видео ">
+                       <button class="play-btn play-btn--medium"> </button>
+                   </a>
+                   
+                
+                
+               </div>
+               
+
+
+           </div>
+       </section> 
+
+ </div>
+ <footer class="footer">
+    <div class="container"> 
+        <div class="container-all-footer">
+            <div class="container-all-footer__logo">
+                <div> <img src="img/LOGO.svg" class="logo-ft" alt=""></div>
+                
+                <div class="flex-copi">
+                    <p class="copi"> © Копирайт 2024</p>
+
+                </div>
+                
+
+
+            </div>
+            <div class="container-all-footer__contacts ">
+                <div class="contacts-foot">
+                    <h3>Контакты</h3>
+                   <div class="footer-icons-contaner footer-icons-social">
+                       <div class="content-icons-header">
+                        <a href="#" class="btn-link-footer">
+                            <svg width="36" height="36" class="svg-footer" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.18608 18C4.18608 9.9524 10.5582 3.42856 18.4186 3.42856C26.279 3.42856 32.6512 9.9524 32.6512 18C32.6512 26.0475 26.279 32.5714 18.4186 32.5714C15.6186 32.5714 13.0124 31.7454 10.8134 30.319C10.4041 30.0536 9.90265 29.9826 9.43843 30.1244L4.61753 31.5975L6.43267 27.249C6.64721 26.7351 6.60356 26.1464 6.31569 25.6715C4.96583 23.4445 4.18608 20.8181 4.18608 18ZM18.4186 0C8.7087 0 0.837245 8.05886 0.837245 18C0.837245 21.151 1.62948 24.117 3.02174 26.696L0.134743 33.6119C-0.120475 34.2234 -0.0073483 34.9307 0.425003 35.4268C0.857355 35.9231 1.53096 36.1186 2.15329 35.9283L9.6872 33.6265C12.2608 35.1368 15.2434 35.9999 18.4186 35.9999C28.1286 35.9999 36 27.9411 36 18C36 8.05886 28.1286 0 18.4186 0ZM22.2572 21.7412L20.0567 23.3281C19.0261 22.7271 17.8866 21.8881 16.7437 20.718C15.5555 19.5015 14.6746 18.2456 14.0251 17.0936L15.4236 15.8784C16.0237 15.3569 16.1879 14.4777 15.8182 13.7662L14.0364 10.3376C13.7964 9.87593 13.3638 9.55164 12.8615 9.45691C12.3591 9.36219 11.842 9.50741 11.4572 9.85128L10.9289 10.3233C9.65843 11.4585 8.90707 13.3239 9.5298 15.2127C10.1754 17.1708 11.5532 20.2525 14.3758 23.1423C17.4124 26.2513 20.4971 27.4757 22.3009 27.9512C23.7543 28.3342 25.1297 27.8207 26.0988 27.0123L27.0892 26.186C27.5129 25.8327 27.7414 25.2898 27.7016 24.7318C27.6616 24.1738 27.3582 23.6708 26.8887 23.3843L24.0785 21.6701C23.5108 21.324 22.7975 21.3517 22.2572 21.7412Z" fill="white"/>
+                            </svg>
+                        </a>
+                        
+                    </div>
+                    <div class="content-icons-header">
+                        <a href="#">
+                          <svg width="38" height="28" class="svg-footer" viewBox="0 0 38 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M35.1872 0.00260814C34.6961 0.021346 34.2336 0.138458 33.8224 0.269623H33.8167C33.3998 0.405473 31.4183 1.08941 28.409 2.12468C25.3996 3.16463 21.4936 4.51376 17.6163 5.85352C9.87296 8.52836 2.26099 11.161 2.26099 11.161L2.35236 11.1329C2.35236 11.1329 1.827 11.2735 1.2788 11.5826C0.998989 11.7325 0.690626 11.9387 0.422238 12.2619C0.153848 12.5851 -0.0631479 13.0817 0.0167985 13.5923C0.148138 14.4589 0.833387 14.9789 1.32448 15.2646C1.82129 15.5551 2.29525 15.6909 2.29525 15.6909H2.30667L9.44468 17.6631C9.76447 18.5063 11.6204 23.5093 12.0658 24.6617C12.3284 25.3503 12.5854 25.7813 12.9052 26.1092C13.0594 26.2778 13.2421 26.4184 13.4591 26.5308C13.5448 26.573 13.6361 26.6058 13.7275 26.6339C13.756 26.6479 13.7846 26.6526 13.8189 26.6573L13.7446 26.6432C13.7675 26.6479 13.7846 26.662 13.8017 26.6667C13.8588 26.6807 13.8988 26.6854 13.973 26.6948C15.1037 26.9758 16.0117 26.3996 16.0117 26.3996L16.063 26.3668L20.2773 23.2189L27.3411 27.6644L27.501 27.7207C28.9743 28.25 30.4647 27.9549 31.2527 27.4349C32.0465 26.9102 32.3548 26.2404 32.3548 26.2404L32.4062 26.1326L37.8654 3.19274C38.0196 2.62592 38.0595 2.09657 37.8882 1.58128C37.7169 1.06598 37.2772 0.583483 36.7462 0.325837C36.2094 0.0635061 35.6783 -0.0161298 35.1872 0.00260814ZM35.0387 2.46196C35.033 2.53691 35.0502 2.52754 35.0102 2.67276V2.68681L29.6024 25.3878C29.5796 25.4206 29.5396 25.4909 29.4311 25.5611C29.3169 25.6361 29.2255 25.6829 28.7516 25.5283L20.1117 20.0943L14.8924 23.9965L15.9888 18.2533C15.9888 18.2533 29.5225 7.90532 30.1049 7.4603C30.6874 7.01527 30.4933 6.92158 30.4933 6.92158C30.5332 6.37818 29.6138 6.76231 29.6138 6.76231L11.8145 15.808L11.8088 15.7846L3.27744 13.4283V13.4236C3.27173 13.4236 3.26031 13.419 3.2546 13.419C3.26031 13.419 3.30028 13.4049 3.30028 13.4049L3.34597 13.3862L3.39165 13.3721C3.39165 13.3721 11.0093 10.7394 18.7527 8.06459C22.63 6.72483 26.5359 5.3757 29.5396 4.33575C32.5433 3.30048 34.7646 2.54159 34.8903 2.49943C35.0102 2.46196 34.9531 2.46196 35.0387 2.46196Z" fill="white"/>
+                         </svg>
+                        </a> 
+                        
+    
+                    </div>
+                    <div class="content-icons-header">
+                        <a href="#">
+                           <svg width="35" height="32" class="svg-footer" viewBox="0 0 35 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 8L11.386 15.2666C13.5956 16.9772 14.7005 17.8326 15.8945 18.165C16.9499 18.4586 18.0501 18.4586 19.1055 18.165C20.2995 17.8326 21.4045 16.9772 23.6141 15.2666L33 8M7.51111 30H27.4889C29.4179 30 30.3826 30 31.1193 29.564C31.7674 29.1806 32.2944 28.5686 32.6246 27.816C33 26.9604 33 25.8402 33 23.6V8.4C33 6.1598 33 5.03968 32.6246 4.18404C32.2944 3.43138 31.7674 2.81946 31.1193 2.43598C30.3826 2 29.4179 2 27.4889 2H7.51111C5.58205 2 4.6175 2 3.8807 2.43598C3.23258 2.81946 2.70565 3.43138 2.37543 4.18404C2 5.03968 2 6.15978 2 8.4V23.6C2 25.8402 2 26.9604 2.37543 27.816C2.70565 28.5686 3.23258 29.1806 3.8807 29.564C4.6175 30 5.58203 30 7.51111 30Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                         </svg>
+                        </a>
+                    </div>
+                 </div>
+
+                </div>
+                <div class=" text-container-ft">
+                    
+                    <a href="" class="text-footer-ft margin-text-ft">Реквизиты</a>
+                    <a href="" class="text-footer-ft">Политика конфиденциальности</a>
+                </div> 
+                <!-- <div class=" text-container-ft">
+                    <p> © Копирайт 2024</p>
+                    <div class="footer-pol">
+                        <a href="" class="text-footer-ft margin-text-ft">Реквизиты</a>
+                        <a href="" class="text-footer-ft">Политика конфиденциальности</a>
+                    </div>
+                    
+                </div>  -->
+                
+
+
+            </div>
+            <!-- <div class=" text-container-ft">
+                <p> © Копирайт 2024</p>
+                <div class="footer-pol">
+                    <a href="" class="text-footer-ft margin-text-ft">Реквизиты</a>
+                    <a href="" class="text-footer-ft">Политика конфиденциальности</a>
+                </div>
+                
+            </div>  -->
+        </div>
+
+        
+       
+        
+
+
+
+    </div>
+   
+    
+
+        
+        
+           
+          
+        
+</footer> 
+    
+<!-- <a class="various fancybox" data-fancybox-type="iframe" href="https://www.youtube.com/embed/jid2A7ldc_8?autoplay=1">Youtube (iframe)</a> -->
+
+
+
+
+
+
+
+<script src="js/SCRIPT.JS"></script>
+    <script src="js/bootstrap.bundle.js"></script>    
+
+</body>
+</html>
